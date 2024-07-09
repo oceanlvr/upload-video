@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
 import HomePage from './HomePage';
 import VideoPage from './VideoPage';
-import Video1 from './assets/1.mp4';
-import Video2 from './assets/2.mp4';
-import Video3 from './assets/3.mp4';
-import Video4 from './assets/4.mp4';
+import Video1 from './assets/1t.mp4';
+import Video2 from './assets/2t.mp4';
+import Video3 from './assets/3t.mp4';
+import Video4 from './assets/4t.mp4';
 
 import './App.css';
 
