@@ -12,22 +12,22 @@ import './App.css';
 const App = () => {
   const navigate = useNavigate();
   const videos = [Video1, Video2, Video3, Video4];
-  const paths = [ '/video1', '/video2', '/video3', '/video4'];
+  const paths = ['/video1', '/video2', '/video3', '/video4'];
   const config = videos.map((video, index) => ({ video, path: paths[index] }));
   useEffect(() => {
     const handleKeyDown = (event) => {
       switch (event.key) {
         case 'ArrowUp':
-          navigate('/video1');
-          break;
-        case 'ArrowDown':
-          navigate('/video2');
-          break;
-        case 'ArrowLeft':
           navigate('/video3');
           break;
-        case 'ArrowRight':
+        case 'ArrowDown':
           navigate('/video4');
+          break;
+        case 'ArrowLeft':
+          navigate('/video1');
+          break;
+        case 'ArrowRight':
+          navigate('/video2');
           break;
         default:
           break;
